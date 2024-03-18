@@ -43,7 +43,6 @@ class _AppTutorialScreenState extends State<AppTutorialScreen> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     pageviewController.addListener(() {
       final page = pageviewController.page ?? 0;
@@ -57,7 +56,6 @@ class _AppTutorialScreenState extends State<AppTutorialScreen> {
 
   @override
   void dispose() {
-    // TODO: implement dispose
     pageviewController.dispose();
 
     super.dispose();
@@ -94,7 +92,7 @@ class _AppTutorialScreenState extends State<AppTutorialScreen> {
                   right: 30,
                   child: FadeInRight(
                     from: 15,
-                    delay: const Duration(seconds: 1),
+                    delay: const Duration(milliseconds: 500),
                     child: FilledButton(
                       child: const Text('Comenzar'),
                       onPressed: () => context.pop(),
